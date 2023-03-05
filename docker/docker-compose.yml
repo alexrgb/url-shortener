@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15.2-alpine
+    ports:
+      - ${DB_HOST_PORT}:5432
+    env_file:
+      - .env
+  cache:
+    image: redis:7.0.9-alpine
+    ports:
+      - ${CACHE_HOST_PORT}:6379
+    env_file:
+      - .env
