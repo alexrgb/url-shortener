@@ -13,3 +13,11 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# IDEA IDE
+.idea
+
+# Ignore infrastructure files
+/docker-compose.yml
+/.env
+/app/.env
